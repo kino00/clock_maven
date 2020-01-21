@@ -150,7 +150,7 @@ public class ClockViewer extends JComponent{
 
         double angle = - Math.PI / 3;
         g.translate(center.getX(), center.getY());
-        g.setColor(Color.BLACK);
+        g.setColor(Color.decode(args.getshortHandColor()));
         for(int i = 1; i <= 12; i++){
             double x = length * Math.cos(angle);
             double y = length * Math.sin(angle);
